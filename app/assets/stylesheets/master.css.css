@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,400italic,500,500italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic);
 @import 'bootstrap.css';
 
 h1, h2, h3, h4, h5, h6 {
@@ -7,11 +11,20 @@ h1, h2, h3, h4, h5, h6 {
 body{
 	background: url('/assets/creampaper.png');
 	font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+
 }
 .navbar.navbar-inverse {
   background:url('/assets/classy_fabric.png');
   border-radius: 0;
   box-shadow: 0 2px 5px  rgba(0, 0, 0, .55);
+}
+.navbar-inverse .navbar-brand {
+  color: #FAAF37;
+  font-family:'Ubuntu','Serif';
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  font-size: 25px;
+
 }
 .nice-box{
  /* -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
