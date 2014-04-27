@@ -26,14 +26,29 @@
 					<i class="glyphicon glyphicon-plus-sign"></i>
 					    New Place
 					 <% end %>
+					 <li>
+			      <%= link_to new_place_path do %>
+					<i class="glyphicon glyphicon-phone"></i>
+					    Contact Us
+					 <% end %>
+			    </li>
 			    </li>
 			</ul> 
 			<ul class="nav navbar-nav navbar-right">
-			 <li><a href="#">Link</a></li> 
+			 	<li><a href="#">Link</a></li> 
 			</ul> 
 		</div><!-- /.navbar-collapse --> 
 	</div><!-- /.container-fluid -->
 </nav>
+
+<% if notice.present? %>
+	 <p class="alert alert-info">
+	 	<%= notice %></p>
+<% end %> 
+ <% if alert.present? %> 
+	 <p class="alert alert-danger">
+	 	<%= alert %></p> 
+<% end %>
 <%= yield %>
 
 </body>

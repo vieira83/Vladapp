@@ -28,6 +28,13 @@ body{
   font-size: 40px;
 
 }
+.navbar-nav li:hover{
+  background-color:#FAAF37;
+  
+}
+.navbar-nav li a:hover{
+  color:#fff!important;
+}
 #bs-example-navbar-collapse-1 ul li {
 	border-color: -moz-use-text-color #5E605E -moz-use-text-color #2C2C2C;
     border-style: none solid;

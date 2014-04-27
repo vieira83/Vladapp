@@ -1,0 +1,10 @@
+<div class="nice-box col-xs-10 col-xs-offset-1">
+<h1>Contact Us</h1>
+	<%= simple_form_for @place do |f| %>
+	<%= f.input :name %>
+	<%= f.input :email %>
+	<%= f.input :Subject %> <br />
+	<%= f.input :body %> <br />
+	<%= f.submit 'Send',:class => 'btn btn-primary' %>
+<% end %>
+</div>
