@@ -11,8 +11,25 @@ def index
   end
   def create
     Place.create(place_params)
-     redirect_to root_path
+    redirect_to root_path
   end
+  def show 
+    @place = Place.find(params[:id])
+  end
+   def edit
+    @place = Place.find(params[:id])
+  end
+   def update
+    @place = Place.find(params[:id])
+    @place.update_attributes(place_params)
+    redirect_to root_path
+  end
+  def destroy
+     @place = Place.find(params[:id])
+     @place.destroy
+     @place.destroy
+  end
+  private
   def place_params
     params.require(:place,:name).permit(:name, :description, :address)
   end

@@ -29,14 +29,20 @@ body{
 
 }
 .navbar-nav li:hover{
-  background-color:#FAAF37;
+  opacity: .3;
   
 }
-.navbar-nav li a:hover{
+.navbar-nav li a{  
+  font-size: 15px;
+  font-family: Montserrat;
   color:#fff!important;
 }
+.navbar-nav li a:hover{
+  color:#FffFff!important;
+  opacity: .7;
+}
 #bs-example-navbar-collapse-1 ul li {
-	border-color: -moz-use-text-color #5E605E -moz-use-text-color #2C2C2C;
+	border-color: -moz-use-text-color #5E605E -moz-use-text-color #222;
     border-style: none solid;
     border-width: medium 1px;
 }
