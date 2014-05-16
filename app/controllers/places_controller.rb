@@ -48,6 +48,6 @@ def destroy
 end
 private
   def place_params
-    params.require(:place,:name).permit(:name, :description, :address)
+    params.require(:place).permit(:name, :description, :address)
   end
 end
