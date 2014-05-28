@@ -1,4 +1,42 @@
 <h1>Welcome to my Awesome WebApp</h1>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+       <%= image_tag 'slide1.jpg' %>
+      <div class="carousel-caption">
+         Find the best pizza places
+      </div>
+    </div>
+    <div class="item">
+	   <%= image_tag 'slide2.jpg' %>
+	    <div class="carousel-caption">
+	      Looking for hotdogs?
+    </div>
+  </div>
+  <div class="item active">
+       <%= image_tag 'slide3.jpg' %>
+      <div class="carousel-caption">
+         Find Great  places
+      </div>
+    </div>
+ </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
 <%= will_paginate @pages %>
 <% @places.each do |place| %>
   <div class="nice-box col-xs-10 col-xs-offset-1">
